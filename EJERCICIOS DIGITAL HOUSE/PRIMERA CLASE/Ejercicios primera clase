@@ -1,0 +1,65 @@
+EJERCICIO 1:
+
+function union(arrayUno, arrayDos) {  
+  var resultado = [];  
+  for(var i=0;i<arrayUno.length;i++){
+  if( resultado.indexOf(arrayUno[i])==-1){
+  resultado.push(arrayUno[i])
+  }
+  }
+  for(var u=0;u<arrayDos.length;u++){
+  if(resultado.indexOf(arrayDos[u])==-1){
+  resultado.push(arrayDos[u])
+  }
+  }
+  return resultado;  
+}  
+
+
+EJERCICIO 2:
+
+function interseccion(arrayUno,arrayDos) {  
+  var resultado = [];  
+   for(var i=0;i<arrayUno.length;i++){
+  if(arrayDos.indexOf(arrayUno[i])!=-1){
+  resultado.push(arrayUno[i])
+  }
+  }
+  return resultado;  
+} 
+
+
+EJERCICIO 3:
+
+
+function difference(arrayUno,arrayDos) {  
+  var resultado = [];    
+   for(var i=0;i<arrayUno.length;i++){
+  if(arrayDos.indexOf(arrayUno[i])==-1){
+  resultado.push(arrayUno[i])
+  }
+  }
+   for(var u=0;u<arrayDos.length;u++){
+  if(arrayUno.indexOf(arrayDos[u])==-1){
+  resultado.push(arrayDos[u])
+  }
+  }
+  return resultado;  
+}  
+
+
+
+EJERCICIO 4:
+
+function maximo(arrayDeNumeros){  
+  var maximo = 0;
+  for(var i=0;i<arrayDeNumeros.length;i++){
+  if(arrayDeNumeros[i]>maximo){
+  maximo=arrayDeNumeros[i]
+}
+}
+  return maximo;  
+}  
+  
+
+
